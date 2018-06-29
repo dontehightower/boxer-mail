@@ -1,3 +1,7 @@
+# Authentication with PassportJS
+
+"Passport is authentication middleware for Node. It is designed to serve a singular purpose: authenticate requests."
+
 ## Strategies
 
 ## Sign up w/ Google OAuth API
