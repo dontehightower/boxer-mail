@@ -6,7 +6,15 @@
 // Authentication routes are in ./routes/authRoutes.js
 
 const express = require('express');
+const mongoose = require('mongoose');
+const keys = require('./config/keys');
+
+// The order of these requirements is important. The passportJS
+// GoogleStrategy makes use of the mongoose User class
+require('./models/User');
 require('./services/passport');
+
+mongoose.connect(keys.mongoURI);
 
 const app = express();
 require('./routes/authRoutes')(app);

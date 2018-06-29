@@ -40,3 +40,21 @@ The function created as the second argument of the GoogleStrategy can also acces
   console.log('done', done);
 };
 ```
+
+The profile.id is used to verify a user's identitiy between logins
+
+## Cookie Based Authentication
+
+# MongoDB
+
+## Mongoose Model Classes
+
+## Saving Model Instances
+
+## Mongoose Queries
+
+Query the DB to find if a user with a given ID already exists before saving a new user model instance during OAuth flow.
+
+## Passport Done Callback
+
+`done()`
