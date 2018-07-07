@@ -1,5 +1,3 @@
-#Boxer Mail
-
-"I will work harder" - Boxer **Animal Farm**
+# Boxer Mail - An Email Application
 
 Start the server in development execute `npm run dev` from the command line
