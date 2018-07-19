@@ -256,3 +256,9 @@ When user pays:
 
 1.  response sends back user
 2.  Header updates
+
+[bodyParser](https://github.com/expressjs/body-parser)
+
+At this point in the application, we are sending requests, and need to be able to parse the json to use properties that exist on the `req` object.
+
+body parser exposes those properties and makes them available on the `req.body` object.

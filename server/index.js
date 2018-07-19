@@ -9,6 +9,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cookieSession = require('cookie-session');
 const passport = require('passport');
+const bodyParser = require('body-parser');
 const keys = require('./config/keys');
 
 // The order of these requirements is important. The passportJS
@@ -21,6 +22,7 @@ mongoose.connect(keys.mongoURI);
 const app = express();
 const THIRTY_DAYS = 30 * 24 * 60 * 60 * 1000; // in milliseconds
 
+app.use(bodyParser.json());
 app.use(
   cookieSession({
     maxAge: THIRTY_DAYS,
