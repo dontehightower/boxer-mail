@@ -242,3 +242,17 @@ What Redux Thunk does in particular, is it inspects the return value of each act
 `token` is a reference to the token that is sent by stripe to verify payment
 
 `token.id` helps identify token
+
+Eventually will add a property to the user model that specifies how many credits a user has.
+
+The end UI result of a user payment should be a change in the number of credits displayed in the header
+
+When the app boots up:
+
+1.  Fetch current user model
+2.  Update Header
+
+When user pays:
+
+1.  response sends back user
+2.  Header updates
