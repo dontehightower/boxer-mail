@@ -236,3 +236,9 @@ What Redux Thunk does in particular, is it inspects the return value of each act
 8.  Add credits to the user's account
 
 [React-Stripe-Checkout](https://github.com/azmenak/react-stripe-checkout)
+
+`token` and `stripeKey` are the required props
+
+`token` is a reference to the token that is sent by stripe to verify payment
+
+`token.id` helps identify token
