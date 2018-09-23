@@ -15,6 +15,7 @@ const keys = require('./config/keys');
 // The order of these requirements is important. The passportJS
 // GoogleStrategy makes use of the mongoose User class
 require('./models/User');
+require('./models/Survey');
 require('./services/passport');
 
 mongoose.connect(keys.mongoURI);
@@ -34,6 +35,7 @@ app.use(passport.session());
 
 require('./routes/authRoutes')(app);
 require('./routes/billingRoutes')(app);
+require('./routes/surveyRoutes')(app);
 
 if (process.env.NODE_ENV === 'production') {
   // Express should serve production assets like main.css
