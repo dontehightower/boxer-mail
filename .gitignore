@@ -1,4 +1,6 @@
+LEARN.md
 node_modules
 dev.js
 .env.production
 .env.development
+/build
